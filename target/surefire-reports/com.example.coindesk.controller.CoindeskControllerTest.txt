@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: com.example.coindesk.controller.CoindeskControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.014 s <<< FAILURE! - in com.example.coindesk.controller.CoindeskControllerTest
+testGetTransformedData  Time elapsed: 0.003 s  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: 
+could not execute statement; SQL [n/a]; constraint ["PUBLIC.CONSTRAINT_INDEX_5 ON PUBLIC.CURRENCY(CODE NULLS FIRST) VALUES ( /* 1 */ 'USD' )"; SQL statement:
+insert into currency (id, chinese_name, code) values (default, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: 
+Unique index or primary key violation: "PUBLIC.CONSTRAINT_INDEX_5 ON PUBLIC.CURRENCY(CODE NULLS FIRST) VALUES ( /* 1 */ 'USD' )"; SQL statement:
+insert into currency (id, chinese_name, code) values (default, ?, ?) [23505-214]
+
+testGetOriginalCoindeskData  Time elapsed: 0.003 s  <<< ERROR!
+org.springframework.dao.DataIntegrityViolationException: 
+could not execute statement; SQL [n/a]; constraint ["PUBLIC.CONSTRAINT_INDEX_5 ON PUBLIC.CURRENCY(CODE NULLS FIRST) VALUES ( /* 1 */ 'USD' )"; SQL statement:
+insert into currency (id, chinese_name, code) values (default, ?, ?) [23505-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: 
+Unique index or primary key violation: "PUBLIC.CONSTRAINT_INDEX_5 ON PUBLIC.CURRENCY(CODE NULLS FIRST) VALUES ( /* 1 */ 'USD' )"; SQL statement:
+insert into currency (id, chinese_name, code) values (default, ?, ?) [23505-214]
+

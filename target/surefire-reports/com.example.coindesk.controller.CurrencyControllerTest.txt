@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: com.example.coindesk.controller.CurrencyControllerTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.524 s <<< FAILURE! - in com.example.coindesk.controller.CurrencyControllerTest
+testDeleteCurrency  Time elapsed: 0.048 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<204> but was:<200>
+	at com.example.coindesk.controller.CurrencyControllerTest$DeleteCurrencyTests.testDeleteCurrency(CurrencyControllerTest.java:125)
+
+testCreateCurrency{String, String}[1]  Time elapsed: 0.01 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<201> but was:<200>
+	at com.example.coindesk.controller.CurrencyControllerTest$CreateCurrencyTests.testCreateCurrency(CurrencyControllerTest.java:66)
+
+testCreateCurrency{String, String}[2]  Time elapsed: 0.009 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<201> but was:<503>
+	at com.example.coindesk.controller.CurrencyControllerTest$CreateCurrencyTests.testCreateCurrency(CurrencyControllerTest.java:66)
+
+testCreateCurrency{String, String}[3]  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<201> but was:<503>
+	at com.example.coindesk.controller.CurrencyControllerTest$CreateCurrencyTests.testCreateCurrency(CurrencyControllerTest.java:66)
+
