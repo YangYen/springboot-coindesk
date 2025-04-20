@@ -81,7 +81,6 @@ public class CoindeskApiService {
 
     private String transformDateTime(String isoDateTime) {
         try {
-            // 使用 ISO 8601 格式解析，包含時區偏移
             SimpleDateFormat isoFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX");
             Date date = isoFormat.parse(isoDateTime);
 
